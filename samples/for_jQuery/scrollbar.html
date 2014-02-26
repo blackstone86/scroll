@@ -32,18 +32,10 @@
 			</div>
 		</div>				
 	</div>		
-	<button id="btn">更多內容</button>
-	<script src="js/base.min.js"></script>
-	<script src="js/scroll.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/scroll.js"></script>
 	<script>
-		nmg('#scrollbox').toScrollBar();
-
-		var cnt = '动态添加的内容。动态添加的内容。动态添加的内容。动态添加的内容。';
-
-		nmg('#btn').bind('click',function(){
-		  nmg('.cnt_box').html( nmg('.cnt_box').html() + cnt ); 
-		});
+		new ScrollEmulate('scrollbox').work();
 	</script>
 </body>
 </html>
