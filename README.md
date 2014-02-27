@@ -38,6 +38,7 @@ Scroll 是一款模拟滚动条的js插件，类似于iScroll，用于改变网�
 
 ##例子
 
+## 基于base.js（个人开发基础库）
 ###CASE 1
 
 ``` 自定義樣式
@@ -91,8 +92,68 @@ nmg('#scrollbox').toScrollBar();
 <script src="js/scroll.min.js"></script>
 ```
 ``` js
+nmg('#scrollbox').toScrollBar();
+
 var cnt = '动态添加的内容。动态添加的内容。动态添加的内容。动态添加的内容。';
+
 nmg('#btn').bind('click',function(){
   nmg('.cnt_box').html( nmg('.cnt_box').html() + cnt ); 
+});
+```
+
+## 基于jQuery（选用v1.11.0）
+###CASE 1
+
+``` html
+<div class="mybox">
+  <div id="scrollbox" class="j_scrollbox">
+    <div class="j_cntwrap">
+      <div class="j_cntbox">
+        <h1>contact us</h1>
+        <p>misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食</p>  
+      </div>        
+    </div>
+    <div class="j_bar">
+      <a href="javascript:" class="j_point"></a>
+    </div>
+  </div>  
+</div> 
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/scroll.min.js"></script>
+```
+
+``` js
+$('#scrollbox').toScrollBar();
+```
+
+###CASE 2
+
+ 动态添加内容
+
+``` html
+<div class="mybox">
+  <div id="scrollbox" class="j_scrollbox">
+    <div class="j_cntwrap">
+      <div class="j_cntbox">
+        <h1>contact us</h1>
+        <p class="cnt_box">misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支攻速食市場的分支mi2cool場的分支misocool攻速食</p>  
+      </div>        
+    </div>
+    <div class="j_bar">
+      <a href="javascript:" class="j_point"></a>
+    </div>
+  </div>   
+</div>
+<button id="btn">更多內容</button>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/scroll.min.js"></script>
+```
+``` js
+$('#scrollbox').toScrollBar();
+
+var cnt = '动态添加的内容。动态添加的内容。动态添加的内容。动态添加的内容。';
+
+$('#btn').bind('click',function(){
+  $('.cnt_box').html( $('.cnt_box').html() + cnt ); 
 });
 ```
